@@ -48,6 +48,7 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Oxygen:wght@300;400;700&family=Rufina:wght@400;700&display=swap"
             rel="stylesheet"
           />
+          <link rel="shortcut icon" href="/icon.png" type="image/png" />
         </Head>
         <Main />
         <NextScript />
