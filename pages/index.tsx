@@ -171,14 +171,14 @@ export default function Home() {
               <S.StepDetailDescription>
                 To install this bot, you need to follow these steps in the
                 terminal:
-                <S.CodeBlock>
-                  <p>git clone</p>
-                  <p>git@github.com:diogocezar/pizzaiolo.git</p>
-                  <p>cd pizzaiolo</p>
-                  <p>yarn build </p>
-                  <p>yarn start</p>
-                </S.CodeBlock>
               </S.StepDetailDescription>
+              <S.CodeBlock>
+                <p>git clone</p>
+                <p>git@github.com:diogocezar/pizzaiolo.git</p>
+                <p>cd pizzaiolo</p>
+                <p>yarn build </p>
+                <p>yarn start</p>
+              </S.CodeBlock>
             </div>
             <EndStepOne />
           </S.CardStepDetail>

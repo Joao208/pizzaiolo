@@ -274,6 +274,16 @@ export const CodeBlock = styled.div`
 
   p {
     margin: 0;
+
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+
+    color: #1e1c05;
   }
 `
 
