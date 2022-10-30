@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 import type { AppProps } from 'next/app'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -24,14 +22,20 @@ const GlobalStyle = createGlobalStyle`
   }
 
   * ::selection {
-    background: red;
-    color: #fff;
+    background: #9C931D;
+  }
+
+  *::-webkit-scrollbar {
+    width: 1px;
+  }
+
+
+  *::-webkit-scrollbar-thumb {
+    background: blue;
   }
 `
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const router = useRouter()
-
   return (
     <>
       <GlobalStyle />
