@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
+import { colors } from 'utils/colors'
+import { fonts } from 'utils/fonts'
 import { CardStepDetailProps, TitleProps } from '../interfaces'
 
 export const Container = styled.div`
@@ -13,11 +15,11 @@ export const Container = styled.div`
       rgba(103, 96, 0, 0.05),
       rgba(103, 96, 0, 0.05)
     ),
-    #fffbff;
+    ${colors.primary};
 `
 
 export const Main = styled.div`
-  background: #1d1c16;
+  background: ${colors.secondary};
 
   height: 90vh;
 
@@ -32,7 +34,7 @@ export const Main = styled.div`
 export const ContainerText = styled.div``
 
 export const Title = styled.p<TitleProps>`
-  font-family: 'Rufina';
+  font-family: ${fonts.secondary};
   font-style: normal;
   font-weight: 400;
   font-size: 45px;
@@ -40,7 +42,7 @@ export const Title = styled.p<TitleProps>`
 
   text-align: center;
 
-  color: #ffffff;
+  color: ${colors.white};
 
   flex: none;
   order: 0;
@@ -78,21 +80,21 @@ export const ButtonGithub = styled(Link)`
   width: 120px;
   height: 40px;
 
-  background: #d4ca51;
+  background: ${colors.third};
   border-radius: 100px;
 
-  font-family: 'Oxygen';
+  font-family: ${fonts.primary};
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #353100;
+  color: ${colors.fourth};
 
   cursor: pointer;
 `
 
 export const ButtonHighlight = styled(Link)`
-  font-family: 'Oxygen';
+  font-family: ${fonts.primary};
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -104,7 +106,7 @@ export const ButtonHighlight = styled(Link)`
   justify-content: center;
   letter-spacing: 0.1px;
 
-  color: #d4ca51;
+  color: ${colors.third};
 
   flex: none;
   order: 1;
@@ -127,7 +129,7 @@ export const ButtonsContainer = styled.div`
 `
 
 export const SlackInstallMain = styled.div`
-  background: #d9d9d9;
+  background: ${colors.fifth};
 
   height: fit-content;
 
@@ -145,19 +147,19 @@ export const SlackInstallMain = styled.div`
 export const EndInstallMain = styled(SlackInstallMain)``
 
 export const StepNumberTitle = styled.p`
-  font-family: 'Rufina';
+  font-family: ${fonts.secondary};
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 36px;
-  color: #1d1c16;
+  color: ${colors.secondary};
 
   flex: none;
 
   margin: 0;
 
   span {
-    font-family: 'Gideon Roman';
+    font-family: ${fonts.third};
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
@@ -165,7 +167,7 @@ export const StepNumberTitle = styled.p`
 
     text-align: right;
 
-    color: #676000;
+    color: ${colors.eighth};
 
     flex: none;
     order: 0;
@@ -179,7 +181,7 @@ export const GithubInstallMain = styled.div`
       rgba(103, 96, 0, 0.11),
       rgba(103, 96, 0, 0.11)
     ),
-    #fffbff;
+    ${colors.primary};
 
   height: fit-content;
 
@@ -210,19 +212,19 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
 `
 
 export const StepDetailTitle = styled.p`
-  font-family: 'Rufina';
+  font-family: ${fonts.secondary};
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
 
-  color: #1d1c16;
+  color: ${colors.secondary};
 
   flex: none;
 `
 
 export const StepDetailDescription = styled.p`
-  font-family: 'Oxygen';
+  font-family: ${fonts.primary};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -230,7 +232,7 @@ export const StepDetailDescription = styled.p`
 
   letter-spacing: 0.4px;
 
-  color: #484740;
+  color: ${colors.sixth};
 
   flex: none;
 
@@ -238,16 +240,16 @@ export const StepDetailDescription = styled.p`
   overflow: hidden;
 
   .code {
-    background: #e9e4be;
+    background: ${colors.seventh};
     border-radius: 4px;
 
-    color: #1e1c05;
+    color: ${colors.ninth};
 
     padding: 2px 4px;
   }
 
   .bold {
-    font-family: 'Oxygen';
+    font-family: ${fonts.primary};
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -255,7 +257,7 @@ export const StepDetailDescription = styled.p`
 
     letter-spacing: 0.4px;
 
-    color: #484740;
+    color: ${colors.sixth};
   }
 
   a {
@@ -263,7 +265,7 @@ export const StepDetailDescription = styled.p`
 `
 
 export const CodeBlock = styled.div`
-  background: #e9e4be;
+  background: ${colors.seventh};
   border-radius: 4px;
 
   padding: 16px;
@@ -276,7 +278,7 @@ export const CodeBlock = styled.div`
   p {
     margin: 0;
 
-    font-family: 'Oxygen';
+    font-family: ${fonts.primary};
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -284,7 +286,7 @@ export const CodeBlock = styled.div`
 
     letter-spacing: 0.4px;
 
-    color: #1e1c05;
+    color: ${colors.ninth};
   }
 `
 
@@ -294,7 +296,7 @@ export const Footer = styled.div`
       rgba(103, 96, 0, 0.05),
       rgba(103, 96, 0, 0.05)
     ),
-    #fffbff;
+    ${colors.primary};
 
   display: flex;
   justify-content: center;
@@ -314,7 +316,7 @@ export const FooterContainer = styled.div`
 `
 
 export const FooterTitle = styled.p`
-  font-family: 'Rufina';
+  font-family: ${fonts.secondary};
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -322,12 +324,12 @@ export const FooterTitle = styled.p`
 
   letter-spacing: 0.15px;
 
-  color: #32302b;
+  color: ${colors.tenth};
   margin: 0;
 `
 
 export const FooterTextTitle = styled.p`
-  font-family: 'Oxygen';
+  font-family: ${fonts.primary};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -335,13 +337,13 @@ export const FooterTextTitle = styled.p`
 
   letter-spacing: 0.4px;
 
-  color: #32302b;
+  color: ${colors.tenth};
 
   margin: 8px 0;
 `
 
 export const FooterText = styled(Link)`
-  font-family: 'Oxygen';
+  font-family: ${fonts.primary};
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -349,7 +351,7 @@ export const FooterText = styled(Link)`
 
   letter-spacing: 0.4px;
 
-  color: #605e57;
+  color: ${colors.eleventh};
   margin: 8px 0;
 `
 
