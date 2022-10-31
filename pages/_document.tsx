@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-title-in-document-head */
 import Document, {
   Html,
   Head,
@@ -52,10 +51,9 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <title>Pizzaiolo - Github Slack Integration</title>
-
-          <link rel="shortcut icon" href="/icon.png" type="image/png" />
-          <link rel="icon" href="/icon.png" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="/favicon.png" />
+          <link rel="icon" href="/favicon.png" />
 
           <NextSeo
             title="Pizzaiolo - Github Slack Integration"
