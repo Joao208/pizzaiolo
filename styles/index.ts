@@ -1,8 +1,24 @@
 import Link from 'next/link'
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
+
 import { colors } from 'utils/colors'
 import { fonts } from 'utils/fonts'
+
 import { CardStepDetailProps, TitleProps } from '../interfaces'
+
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+  
+  60% {
+    transform: translateY(-10px);
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -117,6 +133,10 @@ export const ButtonHighlight = styled(Link)`
   cursor: pointer;
 
   height: 40px;
+
+  svg {
+    animation: ${bounce} 3s infinite;
+  }
 `
 
 export const ButtonsContainer = styled.div`
