@@ -48,8 +48,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/icon.png" type="image/png" />
-        <link rel="icon" href="/icon.png" />
+        <title>Pizzaiolo - Github Slack Integration</title>
+
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
