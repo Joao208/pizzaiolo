@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 
 const GlobalStyle = createGlobalStyle`
   html,
@@ -38,6 +39,10 @@ const GlobalStyle = createGlobalStyle`
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+        <link rel="shortcut icon" href="/icon.png" type="image/png" />
+        <link rel="icon" href="/icon.png" />
+      </Head>
       <GlobalStyle />
       <Component {...pageProps} />
     </>
