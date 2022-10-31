@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import * as S from '@styles/index'
 
 import GithubLogo from '@public/svg/github.svg'
@@ -52,7 +54,12 @@ export default function Home() {
             <div>
               <S.StepDetailTitle>Create the bot in Slack</S.StepDetailTitle>
               <S.StepDetailDescription>
-                In <a>Slack Apps Dashboard</a> create a new app in Button
+                In{characters.space}
+                <Link href="https://api.slack.com/apps">
+                  Slack Apps Dashboard
+                </Link>
+                {characters.space}
+                create a new app in Button
                 {characters.doubleQuote}New App{characters.doubleQuote}
                 <BrokenLine />
                 Select {characters.doubleQuote}From an app manifest
