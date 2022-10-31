@@ -9,6 +9,11 @@ import SlackStepFour from '@public/svg/slack-step-four.svg'
 import GithubStepOne from '@public/svg/github-step-one.svg'
 import EndStepOne from '@public/svg/end-step-one.svg'
 
+import { BrokenLine } from '@components/BrokenLine'
+import { CodeLine } from '@components/CodeLine'
+import { BoldText } from '@components/BoldText'
+import { characters } from 'utils/characters'
+
 export default function Home() {
   return (
     <>
@@ -46,15 +51,15 @@ export default function Home() {
               <S.StepDetailTitle>Create the bot in Slack</S.StepDetailTitle>
               <S.StepDetailDescription>
                 In <a>Slack Apps Dashboard</a> create a new app in Button
-                &quot;New App&quot; <br />
-                <br />
-                Select &quot;From an app manifest&quot; option, and past the
-                json{' '}
-                <span className="code">json app_manifest_example.json</span> of
-                this root of this project. And change the{' '}
-                <span className="code">{"<Your bot's display name>"}</span>{' '}
-                string, by your but name, and can do anything. <br />
-                <br />
+                {characters.doubleQuote}New App{characters.doubleQuote}
+                <BrokenLine />
+                Select {characters.doubleQuote}From an app manifest
+                {characters.doubleQuote} option, and past the json
+                {characters.space}
+                <CodeLine>json app_manifest_example.json</CodeLine> of this root
+                of this project. And change the{characters.space}
+                <CodeLine>{"<Your bot's display name>"}</CodeLine> string, by
+                your but name, and can do anything. <BrokenLine />
                 Then, click in create.
               </S.StepDetailDescription>
             </div>
@@ -65,10 +70,11 @@ export default function Home() {
             <div>
               <S.StepDetailTitle>Add the bot to workspace</S.StepDetailTitle>
               <S.StepDetailDescription>
-                In <span className="bold">Install your app</span> click in the
-                button with the label &quot;Install to Workspace&quot; and on
-                the screen click in the button with the label &quot;Install to
-                Workspace&quot; and on the screen
+                In <BoldText>Install your app</BoldText> click in the button
+                with the label {characters.doubleQuote}Install to Workspace
+                {characters.doubleQuote} and on the screen click in the button
+                with the label {characters.doubleQuote}Install to Workspace
+                {characters.doubleQuote} and on the screen
               </S.StepDetailDescription>
             </div>
             <SlackStepTwo />
@@ -78,12 +84,12 @@ export default function Home() {
             <div>
               <S.StepDetailTitle>Get the token</S.StepDetailTitle>
               <S.StepDetailDescription>
-                Go to <span className="bold">OAuth & Permissions</span> screens
-                and copy <span className="bold">Bot User OAuth Token.</span>
-                <br /> <br />
-                Then this, you can past the token in{' '}
-                <span className="code">SLACK_TOKEN</span>environment variables
-                file.
+                Go to <BoldText>OAuth & Permissions</BoldText> screens and copy
+                {characters.space}
+                <BoldText>Bot User OAuth Token.</BoldText>
+                <BrokenLine />
+                Then this, you can past the token in{characters.space}
+                <CodeLine>SLACK_TOKEN</CodeLine>environment variables file.
               </S.StepDetailDescription>
             </div>
             <SlackStepThree />
@@ -96,19 +102,22 @@ export default function Home() {
               </S.StepDetailTitle>
               <S.StepDetailDescription>
                 The last thing to do. Please, go to the channel you want to add
-                the bot, and add her in &quot;Integrations&quot; path. <br />
-                <br /> For copy the channel bot, just copy the link of url, or
-                in desktop, click in copy, then copy link, in your channel.{' '}
-                <br />
-                <br /> The link is looks like:{' '}
-                <span className="code">
+                the bot, and add her in {characters.doubleQuote}Integrations
+                {characters.doubleQuote} path.
+                <BrokenLine />
+                For copy the channel bot, just copy the link of url, or in
+                desktop, click in copy, then copy link, in your channel.
+                {characters.space}
+                <BrokenLine />
+                The link is looks like:{characters.space}
+                <CodeLine>
                   https://app.slack.com/client/SLACK_WORKSPACE_ID/CHANNEL_ID
-                </span>{' '}
-                <br />
-                <br />
-                Your channel is the last id, and copy her, and past in{' '}
-                <span className="code">SLACK_CHANNEL</span> environment
-                variables file.
+                </CodeLine>
+                {characters.space}
+                <BrokenLine />
+                Your channel is the last id, and copy her, and past in
+                {characters.space}
+                <CodeLine>SLACK_CHANNEL</CodeLine> environment variables file.
               </S.StepDetailDescription>
             </div>
             <SlackStepFour />
@@ -127,37 +136,31 @@ export default function Home() {
                 In your github organization page, go to settings, for example:
                 “https://github.com/organizations/{'<YOUR_ORGANIZATION>'}
                 /settings/profile”
-                <br />
-                <br />
-                Then, go to{' '}
-                <span className="bold">
-                  Code, planning, and automation
-                </span>{' '}
-                session, and click in <span className="bold">Webhooks</span>{' '}
-                application (for do this step, you need already upped your
-                pizzaiolo machine). <br />
-                <br />
-                In Webhooks Page, click in{' '}
-                <span className="bold">Add Webhook</span> button, in Payload
-                URL, put the url of uploaded
-                <br />
-                <br />
-                In Content type select{' '}
-                <span className="bold">application/json</span> and in Secret put
-                the same secret of you put in your{' '}
-                <span className="bold">GITHUB_WEBHOOK_SECRET</span>
-                environment variables file. <br />
-                <br />
-                Select <span className="bold">Send me everything</span> in{' '}
-                <span className="bold">
+                <BrokenLine />
+                Then, go to <BoldText>Code, planning, and automation</BoldText>
+                {characters.space}
+                session, and click in <BoldText>Webhooks</BoldText> application
+                (for do this step, you need already upped your pizzaiolo
+                machine). <BrokenLine />
+                In Webhooks Page, click in <BoldText>Add Webhook</BoldText>
+                {characters.space}
+                button, in Payload URL, put the url of uploaded
+                <BrokenLine />
+                In Content type select <BoldText>application/json</BoldText> and
+                in Secret put the same secret of you put in your
+                {characters.space}
+                <BoldText>GITHUB_WEBHOOK_SECRET</BoldText>
+                environment variables file. <BrokenLine />
+                Select <BoldText>Send me everything</BoldText> in
+                {characters.space}
+                <BoldText>
                   Which events would you like to trigger this webhook?
-                </span>{' '}
-                session, and finally click in{' '}
-                <span className="bold">Add webhook.</span>
-                <br />
-                <br />
-                If the <span className="bold">active</span> is not selected by
-                default, select it.
+                </BoldText>
+                {characters.space}
+                session, and finally click in <BoldText>Add webhook.</BoldText>
+                <BrokenLine />
+                If the <BoldText>active</BoldText> is not selected by default,
+                select it.
               </S.StepDetailDescription>
             </div>
             <GithubStepOne />
