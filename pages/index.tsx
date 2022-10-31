@@ -12,7 +12,9 @@ import EndStepOne from '@public/svg/end-step-one.svg'
 import { BrokenLine } from '@components/BrokenLine'
 import { CodeLine } from '@components/CodeLine'
 import { BoldText } from '@components/BoldText'
+
 import { characters } from 'utils/characters'
+import { colors } from 'utils/colors'
 
 export default function Home() {
   return (
@@ -38,7 +40,7 @@ export default function Home() {
           </S.ContainerText>
         </S.Main>
         <S.SlackInstallMain>
-          <S.Title id="how-to-install" color="#1D1C16">
+          <S.Title id="how-to-install" color={colors.secondary}>
             How to install
           </S.Title>
 
