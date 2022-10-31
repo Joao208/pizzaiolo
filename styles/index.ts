@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled, { css } from 'styled-components'
 import { CardStepDetailProps, TitleProps } from '../interfaces'
 
@@ -65,7 +66,7 @@ export const Title = styled.p<TitleProps>`
     `}
 `
 
-export const ButtonGithub = styled.div`
+export const ButtonGithub = styled(Link)`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -90,7 +91,7 @@ export const ButtonGithub = styled.div`
   cursor: pointer;
 `
 
-export const ButtonHighlight = styled.div`
+export const ButtonHighlight = styled(Link)`
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 400;
@@ -308,7 +309,8 @@ export const Footer = styled.div`
 export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  height: 96px;
 `
 
 export const FooterTitle = styled.p`
@@ -321,9 +323,24 @@ export const FooterTitle = styled.p`
   letter-spacing: 0.15px;
 
   color: #32302b;
+  margin: 0;
 `
 
-export const FooterText = styled.p`
+export const FooterTextTitle = styled.p`
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  letter-spacing: 0.4px;
+
+  color: #32302b;
+
+  margin: 8px 0;
+`
+
+export const FooterText = styled(Link)`
   font-family: 'Oxygen';
   font-style: normal;
   font-weight: 400;
