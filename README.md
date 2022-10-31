@@ -5,12 +5,15 @@
   Pizzaiolo
 </h1>
 
+![Vercel](https://vercelbadge.vercel.app/api/Joao208/frontend-pizzaiolo)
+
 ## Summary
 
 - [Prints](#prints)
 - [Demo](#demo)
 - [Backend](#backend)
 - [Installation](#installation)
+- [Deploying](#deploying)
 
 ## Prints
 
@@ -41,3 +44,9 @@ yarn build
 
 yarn start
 ```
+
+## Deploying
+
+You can deploy your own Vercel instance of this project.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Joao208/frontend-pizzaiolo)
