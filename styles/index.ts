@@ -261,6 +261,15 @@ export const StepDetailDescription = styled.p`
   }
 
   a {
+    font-family: ${fonts.primary};
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.4px;
+
+    color: ${colors.eighth};
   }
 `
 
