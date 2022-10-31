@@ -7,6 +7,8 @@ import Document, {
   DocumentContext,
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { NextSeo } from 'next-seo'
+import { colors } from 'utils/colors'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -52,14 +54,14 @@ export default class MyDocument extends Document {
 
           <title>Pizzaiolo - Github Slack Integration</title>
 
-          <meta
-            prefix="og: http://ogp.me/ns#"
-            property="og:title"
-            content="Pizzaiolo - Github Slack Integration"
-          />
-
           <link rel="shortcut icon" href="/icon.png" type="image/png" />
           <link rel="icon" href="/icon.png" />
+
+          <NextSeo
+            title="Pizzaiolo - Github Slack Integration"
+            themeColor={colors.secondary}
+            description="Get pull requests from GitHub right in your Slack"
+          />
         </Head>
         <Main />
         <NextScript />
