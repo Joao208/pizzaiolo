@@ -27,12 +27,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar {
-    width: 1px;
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #32302B;
+    opacity: 0.5;
   }
 
 
   *::-webkit-scrollbar-thumb {
-    background: blue;
+    background: #CBC7B5;
+    border-radius: 10px;
   }
 `
 
