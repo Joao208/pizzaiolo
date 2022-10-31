@@ -32,7 +32,7 @@ export default function Home() {
                 Get Started
               </S.ButtonGithub>
 
-              <S.ButtonHighlight href="#how-to-install">
+              <S.ButtonHighlight scroll={false} href="#how-to-install">
                 <ArrowDown />
                 Learn More
               </S.ButtonHighlight>
