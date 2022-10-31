@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^6.5.1",
-    "@types/styled-components": "^5.1.26",
+    "@svgr/webpack": "6.5.1",
+    "@types/styled-components": "5.1.26",
     "next": "13.0.0",
+    "next-seo": "5.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "5.3.6"
   },
   "devDependencies": {
     "@types/node": "18.11.7",
