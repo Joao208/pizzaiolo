@@ -20,11 +20,12 @@ export default function Home() {
             </S.Title>
 
             <S.ButtonsContainer>
-              <S.ButtonGithub>
+              <S.ButtonGithub href="https://github.com/diogocezar/pizzaiolo">
                 <GithubLogo />
                 Get Started
               </S.ButtonGithub>
-              <S.ButtonHighlight>
+
+              <S.ButtonHighlight href="#how-to-install">
                 <ArrowDown />
                 Learn More
               </S.ButtonHighlight>
@@ -32,7 +33,9 @@ export default function Home() {
           </S.ContainerText>
         </S.Main>
         <S.SlackInstallMain>
-          <S.Title color="#1D1C16">How to install</S.Title>
+          <S.Title id="how-to-install" color="#1D1C16">
+            How to install
+          </S.Title>
 
           <S.StepNumberTitle>
             <span>1</span> Configure your Slack
@@ -192,15 +195,21 @@ export default function Home() {
           </S.FooterContainer>
 
           <S.FooterContainer>
-            <S.FooterText>Navigation</S.FooterText>
-            <S.FooterText>GitHub</S.FooterText>
-            <S.FooterText>How install</S.FooterText>
+            <S.FooterTextTitle>Navigation</S.FooterTextTitle>
+            <S.FooterText href="https://github.com/diogocezar/pizzaiolo">
+              GitHub
+            </S.FooterText>
+            <S.FooterText href="#how-to-install">How install</S.FooterText>
           </S.FooterContainer>
 
           <S.FooterContainer>
-            <S.FooterText>Community</S.FooterText>
-            <S.FooterText>Contribute</S.FooterText>
-            <S.FooterText>Doubts and suggestions</S.FooterText>
+            <S.FooterTextTitle>Community</S.FooterTextTitle>
+            <S.FooterText href="https://github.com/sponsors/diogocezar">
+              Contribute
+            </S.FooterText>
+            <S.FooterText href="https://github.com/diogocezar/pizzaiolo/issues">
+              Doubts and suggestions
+            </S.FooterText>
           </S.FooterContainer>
         </S.Footer>
       </S.Container>
