@@ -28,7 +28,7 @@ In our team we work with a code-review step.
 
 In this moment, when a developer finish the code, it's necessary that another one review it.
 
-But, how to mantain all PRs and their respectives status stored in one place?
+But, how to maintain all PRs and their respective status stored in one place?
 
 Thats is Pizzaiolo!
 
