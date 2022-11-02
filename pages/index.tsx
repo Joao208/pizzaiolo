@@ -1,15 +1,10 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import * as S from '@styles/index'
 
 import GithubLogo from '@public/svg/github.svg'
 import ArrowDown from '@public/svg/arrow-down.svg'
-import SlackStepOne from '@public/svg/slack-step-one.svg'
-import SlackStepTwo from '@public/svg/slack-step-two.svg'
-import SlackStepThree from '@public/svg/slack-step-three.svg'
-import SlackStepFour from '@public/svg/slack-step-four.svg'
-import GithubStepOne from '@public/svg/github-step-one.svg'
-import EndStepOne from '@public/svg/end-step-one.svg'
 
 import { BrokenLine } from '@components/BrokenLine'
 import { CodeLine } from '@components/CodeLine'
@@ -72,7 +67,9 @@ export default function Home() {
                 Then, click in create.
               </S.StepDetailDescription>
             </div>
-            <SlackStepOne />
+            <S.ImageContainer>
+              <Image src="/svg/slack-step-one.svg" alt="Step 1 Slack" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
 
           <S.CardStepDetail reverse>
@@ -86,7 +83,9 @@ export default function Home() {
                 {characters.doubleQuote} and on the screen
               </S.StepDetailDescription>
             </div>
-            <SlackStepTwo />
+            <S.ImageContainer>
+              <Image src="/svg/slack-step-two.svg" alt="Step 2 Slack" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
 
           <S.CardStepDetail>
@@ -101,7 +100,9 @@ export default function Home() {
                 <CodeLine>SLACK_TOKEN</CodeLine>environment variables file.
               </S.StepDetailDescription>
             </div>
-            <SlackStepThree />
+            <S.ImageContainer>
+              <Image src="/svg/slack-step-three.svg" alt="Step 3 Slack" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
 
           <S.CardStepDetail reverse>
@@ -129,7 +130,9 @@ export default function Home() {
                 <CodeLine>SLACK_CHANNEL</CodeLine> environment variables file.
               </S.StepDetailDescription>
             </div>
-            <SlackStepFour />
+            <S.ImageContainer>
+              <Image src="/svg/slack-step-four.svg" alt="Step 4 Slack" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
         </S.SlackInstallMain>
 
@@ -172,7 +175,9 @@ export default function Home() {
                 select it.
               </S.StepDetailDescription>
             </div>
-            <GithubStepOne />
+            <S.ImageContainer>
+              <Image src="/svg/github-step-one.svg" alt="Step 1 Github" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
         </S.GithubInstallMain>
         <S.EndInstallMain>
@@ -195,7 +200,9 @@ export default function Home() {
                 <p>yarn start</p>
               </S.CodeBlock>
             </div>
-            <EndStepOne />
+            <S.ImageContainer>
+              <Image src="/svg/end-step-one.svg" alt="Step 1 End" fill />
+            </S.ImageContainer>
           </S.CardStepDetail>
         </S.EndInstallMain>
 
