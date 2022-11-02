@@ -224,6 +224,7 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
   justify-content: space-between;
 
   width: 80%;
+  gap: 10px;
 
   ${({ reverse }) =>
     reverse &&
@@ -231,9 +232,20 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
       flex-direction: row-reverse;
     `}
 
-  @media (max-width: 1358px) {
+  @media (max-width: 750px) {
     flex-direction: column-reverse;
     width: 90%;
+
+    div:nth-child(1) {
+      width: 540px;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 640px) {
+    div:nth-child(1) {
+      width: 100%;
+    }
   }
 `
 
