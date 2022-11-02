@@ -64,7 +64,7 @@ export const Title = styled.p<TitleProps>`
   order: 0;
   flex-grow: 0;
 
-  width: 744px;
+  max-width: 744px;
   height: auto;
 
   margin: 0;
@@ -229,6 +229,10 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
     css`
       flex-direction: row-reverse;
     `}
+
+  @media (max-width: 1358px) {
+    flex-direction: column-reverse;
+  }
 `
 
 export const StepDetailTitle = styled.p`
@@ -251,13 +255,14 @@ export const StepDetailDescription = styled.p`
   line-height: 16px;
 
   letter-spacing: 0.4px;
-
   color: ${colors.sixth};
 
   flex: none;
 
   max-width: 540px;
   overflow: hidden;
+
+  margin: 0;
 
   .code {
     background: ${colors.seventh};
@@ -269,26 +274,10 @@ export const StepDetailDescription = styled.p`
   }
 
   .bold {
-    font-family: ${fonts.primary};
-    font-style: normal;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
-
-    letter-spacing: 0.4px;
-
-    color: ${colors.sixth};
   }
 
   a {
-    font-family: ${fonts.primary};
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-
-    letter-spacing: 0.4px;
-
     color: ${colors.eighth};
   }
 `
