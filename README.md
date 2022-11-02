@@ -9,27 +9,38 @@
 
 ## Summary
 
-- [Prints](#prints)
-- [Demo](#demo)
-- [Backend](#backend)
-- [Installation](#installation)
-- [Deploying](#deploying)
+- [👉 What is this?](#👉-what-is-this)
+- [🤌 Why?](#🤌-why)
+- [🍕 Demo](#🍕-demo)
+- [🚀 Installation](#🚀-installation)
+- [🛫 Deploying](#🛫-deploying)
+- [📫 Contributing](#📫-contributing)
 
-## Prints
+## 👉 What is this?
 
-Here you can see the print of the page.
+This project is a simple **SlackBot** that integrates with **GitHub**.
 
-![Pizzaiolo print](./assets/images/print.png)
+Every time that a PULL REQUEST is created, updated, finished, commented or approved, this boot will send a message in a Slack Channel.
 
-## Demo
+## 🤌 Why?
 
-https://frontend-pizzaiolo.vercel.app/
+In our team we work with a code-review step.
 
-## Backend
+In this moment, when a developer finish the code, it's necessary that another one review it.
 
-Here you can see and contribute with the backend https://github.com/diogocezar/pizzaiolo.
+But, how to mantain all PRs and their respectives status stored in one place?
 
-## Installation
+Thats is Pizzaiolo!
+
+<p align="center">
+  <img src="./assets/images/pizzaiolo-sample.jpg" alt="Sample Pizzaiolo">
+</p>
+
+## 🍕 Demo
+
+https://pizzaiolo.site
+
+## 🚀 Installation
 
 You can install using this commands
 
@@ -45,8 +56,12 @@ yarn build
 yarn start
 ```
 
-## Deploying
+## 🛫 Deploying
 
 You can deploy your own Vercel instance of this project.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/Joao208/frontend-pizzaiolo)
+
+## 📫 Contributing
+
+Please take a look on the [contributing](docs/CONTRIBUTING.md) session.
