@@ -177,6 +177,7 @@ export const StepNumberTitle = styled.p`
   flex: none;
 
   margin: 0;
+  max-width: 90%;
 
   span {
     font-family: ${fonts.third};
@@ -232,6 +233,7 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
 
   @media (max-width: 1358px) {
     flex-direction: column-reverse;
+    width: 90%;
   }
 `
 
@@ -264,6 +266,8 @@ export const StepDetailDescription = styled.p`
 
   margin: 0;
 
+  line-break: anywhere;
+
   .code {
     background: ${colors.seventh};
     border-radius: 4px;
@@ -271,6 +275,8 @@ export const StepDetailDescription = styled.p`
     color: ${colors.ninth};
 
     padding: 2px 4px;
+
+    font-size: 10px;
   }
 
   .bold {
@@ -324,6 +330,10 @@ export const Footer = styled.div`
   gap: 60px;
 
   width: 100%;
+
+  @media (max-width: 408px) {
+    flex-direction: column;
+  }
 `
 
 export const FooterContainer = styled.div`
@@ -331,6 +341,17 @@ export const FooterContainer = styled.div`
   flex-direction: column;
 
   height: 96px;
+
+  @media (max-width: 408px) {
+    height: fit-content;
+
+    width: 90%;
+    align-items: center;
+  }
+
+  @media (max-width: 380px) {
+    align-items: flex-start;
+  }
 `
 
 export const FooterTitle = styled.p`
@@ -376,4 +397,15 @@ export const FooterText = styled(Link)`
 export const FooterLine = styled.hr`
   width: 80%;
   margin: 0;
+
+  @media (max-width: 1358px) {
+    width: 90%;
+  }
+`
+
+export const ImageContainer = styled.div`
+  max-width: 540px;
+  width: 100%;
+  height: 280px;
+  position: relative;
 `
