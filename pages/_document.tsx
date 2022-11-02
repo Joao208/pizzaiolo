@@ -55,6 +55,8 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.png" />
           <link rel="icon" href="/favicon.png" />
 
+          <meta name="theme-color" content="#1d1c16" />
+
           <NextSeo
             title="Pizzaiolo - Github Slack Integration"
             themeColor={colors.secondary}
