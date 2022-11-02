@@ -67,7 +67,7 @@ export default function Home() {
                 Then, click in create.
               </S.StepDetailDescription>
             </div>
-            <S.ImageContainer>
+            <S.ImageContainer style={{ height: 260 }}>
               <Image src="/svg/slack-step-one.svg" alt="Step 1 Slack" fill />
             </S.ImageContainer>
           </S.CardStepDetail>
@@ -83,7 +83,7 @@ export default function Home() {
                 {characters.doubleQuote} and on the screen
               </S.StepDetailDescription>
             </div>
-            <S.ImageContainer>
+            <S.ImageContainer style={{ height: 185 }}>
               <Image src="/svg/slack-step-two.svg" alt="Step 2 Slack" fill />
             </S.ImageContainer>
           </S.CardStepDetail>
@@ -100,7 +100,7 @@ export default function Home() {
                 <CodeLine>SLACK_TOKEN</CodeLine>environment variables file.
               </S.StepDetailDescription>
             </div>
-            <S.ImageContainer>
+            <S.ImageContainer style={{ height: 137 }}>
               <Image src="/svg/slack-step-three.svg" alt="Step 3 Slack" fill />
             </S.ImageContainer>
           </S.CardStepDetail>
