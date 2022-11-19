@@ -107,6 +107,12 @@ export const ButtonGithub = styled(Link)`
   color: ${colors.fourth};
 
   cursor: pointer;
+
+  transition: 0.8s ease-in-out all;
+
+  &:hover {
+    border-radius: 16px;
+  }
 `
 
 export const ButtonHighlight = styled(Link)`
@@ -122,6 +128,8 @@ export const ButtonHighlight = styled(Link)`
   justify-content: center;
   letter-spacing: 0.1px;
 
+  border-radius: 100px;
+
   color: ${colors.third};
 
   flex: none;
@@ -134,8 +142,18 @@ export const ButtonHighlight = styled(Link)`
 
   height: 40px;
 
+  transition: 0.2s ease-in-out background;
+  transition: 0.8s ease-in-out border-radius;
+
+  padding: 10px 16px 10px 12px;
+
   svg {
     animation: ${bounce} 3s infinite;
+  }
+
+  &:hover {
+    border-radius: 16px;
+    background: rgba(230, 225, 229, 0.08);
   }
 `
 
@@ -149,7 +167,12 @@ export const ButtonsContainer = styled.div`
 `
 
 export const SlackInstallMain = styled.div`
-  background: ${colors.fifth};
+  background: linear-gradient(
+      0deg,
+      rgba(103, 96, 0, 0.05),
+      rgba(103, 96, 0, 0.05)
+    ),
+    ${colors.primary};
 
   height: fit-content;
 
