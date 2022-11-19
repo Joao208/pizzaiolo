@@ -256,7 +256,7 @@ export const CardStepDetail = styled.div<CardStepDetailProps>`
     `}
 
   @media (max-width: 750px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 90%;
 
     div:nth-child(1) {
