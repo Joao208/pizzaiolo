@@ -311,7 +311,7 @@ export const StepDetailDescription = styled.p`
 
     padding: 2px 4px;
 
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .bold {
